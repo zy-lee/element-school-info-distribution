@@ -41,7 +41,7 @@
     <body class="skin-black">
         <!-- header logo: style can be found in header.less -->
         <header class="header">
-            <a href="index.html" class="logo">
+            <a href="teacher.html" class="logo">
                 <!-- Add the class icon to your logo image or logo icon to add the margining -->
                 Teacher
             </a>
@@ -816,7 +816,173 @@
                                     </div>
                                 </div>
                             </div>
-                            </div><!-- /.box (chat box) -->   
+                            </div><!-- /.box (chat box) --> 
+                            
+                             <div class="col-lg-10 col-xs-push-2">
+                            <!-- small box -->
+                            <div class="small-box bg-purple">
+                                <div class="inner">
+                                    <h3>
+                                        信息管理
+                                    </h3>
+                                </div>
+                                <div class="icon">
+                                    <i class="ion ion-ios7-briefcase-outline"></i>
+                                </div>
+                                <label for="dtp_input1" class="col-md-0 control-label">查找</label>
+              <form action="#" method="get" class="sidebar-form">
+              
+                   <div class="input-group">
+                   <input type="text" name="q" class="form-control" placeholder="姓名或学号..."/>
+                          <span class="input-group-btn">
+                                <button type='submit' name='seach' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
+                          </span>
+                   </div>
+              </form>
+
+
+                    <!-- /.search form -->                           
+                            
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>name</th>
+                <th>class num</th>
+                <th>class name</th>
+                <th>teacher</th>
+                <th>score</th>
+                <th>period</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Mike</td>
+                <td>001</td>
+                <td>math</td>
+                <td>Tom</td>
+                <td>80</td>
+                <td>2013-mid</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Mike</td>
+                <td>002</td>
+                <td>physics</td>
+                <td>Jared</td>
+                <td>70</td>
+                <td>2013-final</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Mike</td>
+                <td>003</td>
+                <td>C++</td>
+                <td>May</td>
+                <td>90</td>
+                <td>2014-test</td>
+              </tr>
+            </tbody>
+          </table>
+
+                                <a href="#" class="small-box-footer">
+                                    More info <i class="fa fa-arrow-circle-right"></i>
+                                </a>
+                            </div>
+                        </div><!-- ./col --></br></br>
+  
+          <div class="col-lg-10 col-xs-push-2">
+                            <!-- small box -->
+                            <div class="small-box bg-teal">
+                                <div class="inner">
+                                    <h3>
+                                        请假管理
+                                    </h3>
+                                    <label for="dtp_input1" class="col-md-0 control-label">考勤</label></br>
+                                    <div class="box-footer">
+                                    <div class="form-group">
+                                    	<textarea class="form-control" rows="3"></textarea>
+                                    	<div style="float:right">
+                                            <button class="btn btn-success">save</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="icon">
+                                    <i class="ion ion-ios7-pricetag-outline"></i>
+                                </div>
+                                <a href="#" class="small-box-footer">
+                                    More info <i class="fa fa-arrow-circle-right"></i>
+                                </a>
+                            </div>
+                        </div><!-- ./col --> 
+                        
+                        <!-- Chat box --><div class="col-lg-10 col-xs-push-2">
+                            <div class="box box-success">
+                                <div class="box-header">
+                                    <i class="fa fa-comments-o"></i>
+                                    <h3 class="box-title">月评价</h3>
+                                    <div class="box-tools pull-right" data-toggle="tooltip" title="Status">
+                                        <div class="btn-group" data-toggle="btn-toggle" >
+                                            <button type="button" class="btn btn-default btn-sm active"><i class="fa fa-square text-green"></i></button>
+                                            <button type="button" class="btn btn-default btn-sm"><i class="fa fa-square text-red"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-body chat" id="chat-box">
+                                    <!-- chat item -->
+                                    <div class="item">
+                                        <img src="img/avatar.png" alt="user image" class="online"/>
+                                        <p class="message">
+                                            <a href="#" class="name">
+                                                <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 2:15</small>
+                                                Mike Doe
+                                            </a>
+                                            I would like to meet you to discuss the latest news about
+                                            the arrival of the new theme. They say it is going to be one the
+                                            best themes on the market
+                                        </p>
+                                        
+                                    </div><!-- /.item -->
+                                    <!-- chat item -->
+                                    <div class="item">
+                                        <img src="img/avatar2.png" alt="user image" class="offline"/>
+                                        <p class="message">
+                                            <a href="#" class="name">
+                                                <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 5:15</small>
+                                                Jane Doe
+                                            </a>
+                                            I would like to meet you to discuss the latest news about
+                                            the arrival of the new theme. They say it is going to be one the
+                                            best themes on the market
+                                        </p>
+                                    </div><!-- /.item -->
+                                    <!-- chat item -->
+                                    <div class="item">
+                                        <img src="img/avatar3.png" alt="user image" class="offline"/>
+                                        <p class="message">
+                                            <a href="#" class="name">
+                                                <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 5:30</small>
+                                                Susan Doe
+                                            </a>
+                                            I would like to meet you to discuss the latest news about
+                                            the arrival of the new theme. They say it is going to be one the
+                                            best themes on the market
+                                        </p>
+                                    </div><!-- /.item -->
+                                </div><!-- /.chat -->
+                                <div class="box-footer">
+                                    <div class="input-group">
+                                        <input class="form-control" placeholder="Type message..."/>
+                                        <div class="input-group-btn">
+                                            <button class="btn btn-success">commit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div><!-- /.box (chat box) --> 
+                    
                                                         
 				<div class="col-lg-10 col-xs-push-2">
                            <div class="box box-info">
