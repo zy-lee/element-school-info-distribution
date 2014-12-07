@@ -3,7 +3,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Admin | Dashboard</title>
+        <title>Student | Dashboard</title>
         <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
         <!-- bootstrap 3.0.2 -->
         <link href="dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -34,9 +34,9 @@
     <body class="skin-blue">
         <!-- header logo: style can be found in header.less -->
         <header class="header">
-            <a href="admin.html" class="logo">
+            <a href="student.html" class="logo">
                 <!-- Add the class icon to your logo image or logo icon to add the margining -->
-                Admin
+                Student
             </a>
             <!-- Header Navbar: style can be found in header.less -->
             <nav class="navbar navbar-static-top" role="navigation">
@@ -315,42 +315,33 @@
                         
                         <li class="treeview">
                             <a href="#">
-                                <i class="fa fa-bar-chart-o"></i>
-                                <span>通知</span>
+                                <i class="fa fa-envelope"></i> <span>通知栏管理</span>
                                 <i class="fa fa-angle-left pull-right"></i>
                             </a>
-                            <ul class="treeview-menu">
-                                <li><a href=" AdminLTE/pages/charts/morris.html"><i class="fa fa-angle-double-right"></i> Morris</a></li>
-                                <li><a href=" AdminLTE/pages/charts/flot.html"><i class="fa fa-angle-double-right"></i> Flot</a></li>
-                                <li><a href=" AdminLTE/pages/charts/inline.html"><i class="fa fa-angle-double-right"></i> Inline charts</a></li>
-                            </ul>
+                        </li>
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-bar-chart-o"></i>
+                                <span>课程评价管理</span>
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                          
                         </li>
                         <li class="treeview">
                             <a href="#">
                                 <i class="fa fa-laptop"></i>
-                                <span>教师信息</span>
+                                <span>课程表管理</span>
                                 <i class="fa fa-angle-left pull-right"></i>
                             </a>
-                            <ul class="treeview-menu">
-                                <li><a href=" AdminLTE/pages/UI/general.html"><i class="fa fa-angle-double-right"></i> General</a></li>
-                                <li><a href=" AdminLTE/pages/UI/icons.html"><i class="fa fa-angle-double-right"></i> Icons</a></li>
-                                <li><a href=" AdminLTE/pages/UI/buttons.html"><i class="fa fa-angle-double-right"></i> Buttons</a></li>
-                                <li><a href=" AdminLTE/pages/UI/sliders.html"><i class="fa fa-angle-double-right"></i> Sliders</a></li>
-                                <li><a href=" AdminLTE/pages/UI/timeline.html"><i class="fa fa-angle-double-right"></i> Timeline</a></li>
-                            </ul>
+                            
                         </li>
                         <li class="treeview">
                             <a href="#">
-                                <i class="fa fa-edit"></i> <span>Email</span>
+                                <i class="fa fa-edit"></i> <span>日常活动安排</span>
                                 <i class="fa fa-angle-left pull-right"></i>
                             </a>
-                            <ul class="treeview-menu">
-                                <li><a href=" AdminLTE/pages/forms/general.html"><i class="fa fa-angle-double-right"></i> General Elements</a></li>
-                                <li><a href=" AdminLTE/pages/forms/advanced.html"><i class="fa fa-angle-double-right"></i> Advanced Elements</a></li>
-                                <li><a href=" AdminLTE/pages/forms/editors.html"><i class="fa fa-angle-double-right"></i> Editors</a></li>
-                            </ul>
                         </li>
-                        </ul>
+                        
                 </section>
                 <!-- /.sidebar -->
             </aside>
@@ -500,20 +491,22 @@
                             </div><!-- /.box -->
                         </div><!-- ./col -->
                         
-                        <div class="col-lg-3 col-xs-6">
+                        <div class="col-lg-12 col-xs-12">
                             <!-- small box -->
                             <div class="small-box bg-blue">
                                 <div class="inner">
                                     <h3>
-                                        查找
+                                        课程评价
                                     </h3>
                                     <div class="box-footer">
-                                    <div class="input-group">
-                                        <input class="form-control" placeholder="Type message..."/>
-                                        <div class="input-group-btn">
+                                    <div class="form-group">
+                                        <textarea class="form-control" rows="3" placeholder="Type message..."></textarea>
+                                    
+                                        <div style="float:right">
                                             <button class="btn btn-success"><i class="fa fa-plus"></i></button>
                                         </div>
-                                    </div>
+                                        </div>
+                                    
                                 </div>     
                                 </div>
                                 <div class="icon">
@@ -525,21 +518,147 @@
                             </div>
                         </div><!-- ./col -->
                                            
-                        <div class="col-lg-3 col-xs-6">
+                        <div class="col-lg-12 col-xs-12">
                             <!-- small box -->
                             <div class="small-box bg-green">
                                 <div class="inner">
                                     <h3>
-                                        修改
+                                        课程表管理
                                     </h3>
-                                    <form action="#" method="get" class="sidebar-form">
-                        <div class="input-group">
-                            <input type="text" name="q" class="form-control" placeholder="Search..."/>
-                            <span class="input-group-btn">
-                                <button type='submit' name='seach' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
-                            </span>
-                        </div>
-                    </form>
+                                     <table class="table table-bordered">
+										 <thead>
+											 <tr>
+												 <th colspan="2">time</th>
+												 <th>Mon</th>
+												 <th>Tue</th>
+												 <th>Wed</th>
+												 <th>Thu</th>
+												 <th>Fri</th>
+												 </tr>
+												 </thead>
+												 <tbody>
+													 <tr>
+													 	
+														 <td rowspan="5">Morning</td>
+														 
+												
+														  <td>第一节</td>
+														  <td>$getClassName</td>
+														  <td>$getClassName</td>
+														  <td>$getClassName</td>
+														  <td>$getClassName</td>
+														  <td>$getClassName</td>
+														  
+													</tr>
+													<tr>
+													<td>第二节</td>
+													 <td>$getClassName</td>
+														  <td>$getClassName</td>
+														  <td>$getClassName</td>
+														  <td>$getClassName</td>
+														  <td>$getClassName</td>
+														  
+													</tr>
+													<tr>
+													<td>第三节</td>
+													 <td>$getClassName</td>
+														  <td>$getClassName</td>
+														  <td>$getClassName</td>
+														  <td>$getClassName</td>
+														  <td>$getClassName</td>
+														  
+													</tr>
+													<tr>
+													<td>第四节</td>
+													 <td>$getClassName</td>
+														  <td>$getClassName</td>
+														  <td>$getClassName</td>
+														  <td>$getClassName</td>
+														  <td>$getClassName</td>
+														  
+													</tr>
+													<tr>
+													<td>第五节</td>
+													 <td>$getClassName</td>
+														  <td>$getClassName</td>
+														  <td>$getClassName</td>
+														  <td>$getClassName</td>
+														  <td>$getClassName</td>
+														  
+													</tr>
+													<tr>
+														 	<td rowspan="4">Afternoon</td>
+														 	<td>第六节</td>
+														 	 <td>$getClassName</td>
+														  <td>$getClassName</td>
+														  <td>$getClassName</td>
+														  <td>$getClassName</td>
+														  <td>$getClassName</td>
+														  
+												 	</tr>
+												 	<tr>
+												 	<td>第七节</td>
+													 <td>$getClassName</td>
+														  <td>$getClassName</td>
+														  <td>$getClassName</td>
+														  <td>$getClassName</td>
+														  <td>$getClassName</td>
+														  
+													</tr>
+													<tr>
+													<td>第八节</td>
+													 <td>$getClassName</td>
+														  <td>$getClassName</td>
+														  <td>$getClassName</td>
+														  <td>$getClassName</td>
+														  <td>$getClassName</td>
+														  
+													</tr>
+													<tr>
+													<td>第九节</td>
+													 <td>$getClassName</td>
+														  <td>$getClassName</td>
+														  <td>$getClassName</td>
+														  <td>$getClassName</td>
+														  <td>$getClassName</td>
+														  
+													</tr>
+												 	<tr>
+												 	
+													 	<td rowspan="3">Night</td>
+													 	<td>第十节</td>
+													 	 <td>$getClassName</td>
+														  <td>$getClassName</td>
+														  <td>$getClassName</td>
+														  <td>$getClassName</td>
+														  <td>$getClassName</td>
+														
+													</tr>
+													
+													
+													
+													<tr>
+													<td>第十一节</td>
+													 <td>$getClassName</td>
+														  <td>$getClassName</td>
+														  <td>$getClassName</td>
+														  <td>$getClassName</td>
+														  <td>$getClassName</td>
+														 
+													</tr>
+													<tr>
+													<td>第十二节</td>
+													 <td>$getClassName</td>
+														  <td>$getClassName</td>
+														  <td>$getClassName</td>
+														  <td>$getClassName</td>
+														  <td>$getClassName</td>
+														 
+													</tr>
+													
+													
+												</tbody>
+									</table>
                     <!-- /.search form -->                           
                             </div>
                                 <div class="icon">
@@ -550,90 +669,71 @@
                                 </a>
                             </div>
                         </div><!-- ./col -->
-                        <div class="col-lg-3 col-xs-6">
-                            <!-- small box -->
-                            <div class="small-box bg-yellow">
-                                <div class="inner">
-                                    <h3>
-                                        添加
-                                    </h3>
-                                    <div class="box-footer">
-                                    <div class="input-group">
-                                        <input class="form-control" placeholder="Type message..."/>
-                                        <div class="input-group-btn">
-                                            <button class="btn btn-success"><i class="fa fa-plus"></i></button>
+                        
+                        <!-- Chat box --><div class="col-lg-12 col-xs-12">
+                            <div class="box box-success">
+                                <div class="box-header">
+                                    <i class="fa fa-comments-o"></i>
+                                    <h3 class="box-title">日常活动安排</h3>
+                                    <div class="box-tools pull-right" data-toggle="tooltip" title="Status">
+                                        <div class="btn-group" data-toggle="btn-toggle" >
+                                            <button type="button" class="btn btn-default btn-sm active"><i class="fa fa-square text-green"></i></button>
+                                            <button type="button" class="btn btn-default btn-sm"><i class="fa fa-square text-red"></i></button>
                                         </div>
                                     </div>
-                                </div>     
                                 </div>
-                                <div class="icon">
-                                    <i class="ion ion-person-add"></i>
-                                </div>
-                                <a href="#" class="small-box-footer">
-                                    More info <i class="fa fa-arrow-circle-right"></i>
-                                </a>
-                            </div>
-                        </div><!-- ./col -->
-                        <div class="col-lg-3 col-xs-6">
-                            <!-- small box -->
-                            <div class="small-box bg-red">
-                                <div class="inner">
-                                    <h3>
-                                        删除
-                                    </h3>
-                                    <form action="#" method="get" class="sidebar-form">
-                        <div class="input-group">
-                            <input type="text" name="q" class="form-control" placeholder="Search..."/>
-                            <span class="input-group-btn">
-                                <button type='submit' name='seach' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
-                            </span>
-                        </div>
-                    </form>
-                    <!-- /.search form -->
-                                </div>
-                                <div class="icon">
-                                    <i class="ion ion-pie-graph"></i>
-                                </div>
-                                <a href="#" class="small-box-footer">
-                                    More info <i class="fa fa-arrow-circle-right"></i>
-                                </a>
-                            </div>
-                        </div><!-- ./col -->
-                    </div><!-- /.row -->
+                                <div class="box-body chat" id="chat-box">
+                                    <!-- chat item -->
+                                    <div class="item">
+                                        </br></br>
+                                        <p class="message">
+                                            <a href="#" class="name">
+                                                <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 2:15</small>
+                                                
+                                            </a>
+                                            I would like to meet you to discuss the latest news about
+                                            the arrival of the new theme. They say it is going to be one the
+                                            best themes on the market
+                                        </p>
+                                        
+                                    </div><!-- /.item -->
+                                    <!-- chat item -->
+                                    <div class="item">
+                                        </br></br>
+                                        <p class="message">
+                                            <a href="#" class="name">
+                                                <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 5:15</small>
+                                                
+                                            </a>
+                                            I would like to meet you to discuss the latest news about
+                                            the arrival of the new theme. They say it is going to be one the
+                                            best themes on the market
+                                        </p>
+                                    </div><!-- /.item -->
+                                    <!-- chat item -->
+                                    <div class="item">
+                                    </br></br>
+                                        <p class="message">
+                                            <a href="#" class="name">
+                                                <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 5:30</small>
+                                                
+                                            </a>
+                                            I would like to meet you to discuss the latest news about
+                                            the arrival of the new theme. They say it is going to be one the
+                                            best themes on the market
+                                        </p>
+                                    </div><!-- /.item -->
+                                </div><!-- /.chat -->
+                                                            </div>
+                            </div><!-- /.box (chat box) --> 
+
 
                     
 
                                                         
 
 
-                            <!-- quick email widget -->
-                            <div class="box box-info">
-                                <div class="box-header">
-                                    <i class="fa fa-envelope"></i>
-                                    <h3 class="box-title">Quick Email</h3>
-                                    <!-- tools box -->
-                                    <div class="pull-right box-tools">
-                                        <button class="btn btn-info btn-sm" data-widget="remove" data-toggle="tooltip" title="Remove"><i class="fa fa-times"></i></button>
-                                    </div><!-- /. tools -->
-                                </div>
-                                <div class="box-body">
-                                    <form action="#" method="post">
-                                        <div class="form-group">
-                                            <input type="email" class="form-control" name="emailto" placeholder="Email to:"/>
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" name="subject" placeholder="Subject"/>
-                                        </div>
-                                        <div>
-                                            <textarea class="textarea" placeholder="Message" style="width: 100%; height: 125px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="box-footer clearfix">
-                                    <button class="pull-right btn btn-default" id="sendEmail">Send <i class="fa fa-arrow-circle-right"></i></button>
-                                </div>
-                            </div>
-
+                            
                         </section><!-- /.Left col -->
                         <!-- right col (We are only adding the ID to make the widgets sortable)-->
                        
